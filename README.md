@@ -1,3 +1,1 @@
-Advanced ARM architecture
-Assignment 1
-asm files for keil simulator
+Advanced ARM architecture -- Assignment 1 -- asm files for keil simulator
