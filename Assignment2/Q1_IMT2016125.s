@@ -12,7 +12,7 @@ __main  FUNCTION		        ;function to get e power x
 		 MOV R1,#0x32			    ;total number of terms (50)
 		 
 check		 ADD R0, R0, #0x1
-		         CMP R0,R1			; comapring number of terms with total number
+		         CMP R0,R1			; comparing number of terms with total number
 		         BLE loop		 
 
 stop   B stop
