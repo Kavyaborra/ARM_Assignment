@@ -4,6 +4,7 @@
      IMPORT printMsg
 	 IMPORT printMsg2p
 	 IMPORT printMsg4p
+	 IMPORT printhead
 	 ENTRY 
 __main  FUNCTION		        ;function to get points of circle with a given centre and radius 		
 		 VLDR.F32 S0, = 100		;radius = 100 pix
@@ -15,6 +16,7 @@ __main  FUNCTION		        ;function to get points of circle with a given centre 
 		 VLDR.F32 S14, =0		;count variable k for the angle
 		 VLDR.F32  S11, = 1
 		 VLDR.F32  S17, = 0.0174532		;1 degree = pi/180 = 0.0174532
+		 BL printhead					;to display the headings of the four columns
 		 
 acheck		 ADD R10, R10, #0x1		;increments the angle
 				 CMP R10, R9				;checks if angle = 360
