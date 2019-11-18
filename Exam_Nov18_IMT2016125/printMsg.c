@@ -32,6 +32,17 @@ void printMsg2p(const int a, const int b)
    }
 }
 
+void printhead()
+{
+	 char Msg[100];
+	 char *ptr;
+	 sprintf(Msg, "R\tAngle\tX\tY\n");
+	 ptr = Msg ;
+   while(*ptr != '\0'){
+      ITM_SendChar(*ptr);
+      ++ptr;
+   }
+}
 void printMsg4p(const int a, const int b, const int c, const int d, const int e)
 {
 	 char Msg[100];
@@ -65,4 +76,5 @@ void printMsg4p(const int a, const int b, const int c, const int d, const int e)
       ++ptr;
 	 }
 }
+
 
